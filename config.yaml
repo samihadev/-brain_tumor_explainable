@@ -1,0 +1,17 @@
+project:
+  name: "Brain_Tumor_Explainable_AI"
+  random_seed: 42
+
+data:
+  dataset_name: "masoudnickparvar/brain-tumor-mri-dataset"
+  img_size: [224, 224]
+  batch_size: 32
+  train_split: 0.70
+  val_split: 0.15
+  test_split: 0.15
+
+training:
+  epochs: 50
+  learning_rate: 0.0001
+  optimizer: "adam"
+  loss: "binary_crossentropy"
